@@ -50,6 +50,7 @@ const App: React.FC = () => {
   return (
     <div className="bg-secondary-black sm:px-16 h-screen">
       
+      {/* social media links */}
       <ListOfSocials socials={social}/>
 
       <div className="font-semibold text-white sm:py-16 px-4 sm:px-0 sm:pl-10 sm:flex">
