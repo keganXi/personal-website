@@ -17,7 +17,7 @@ const ListOfSocials: React.FC<ListOfSocialsState> = (props) => {
                     return(
                         <div>
                             <a href={ item.url } target="blank">
-                                <img src={ item.icon } alt={ item.icon } className="w-[20px] h-[20px] cursor-pointer"/>
+                                <img src={ item.icon } alt="Social media logo" className="w-[20px] h-[20px] cursor-pointer"/>
                             </a>
                         </div>
                     )
