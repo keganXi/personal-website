@@ -61,7 +61,7 @@ const App: React.FC = () => {
           <p>{ intro.technologies }</p>
         </div>
 
-        <div className="w-full justify-center flex">
+        <div className="w-full justify-center hidden sm:flex">
           <div className="p-7 rounded-lg bg-transparent opacity-30">
             <img src={ PersonalWebsite } className="w-[400px] h-[400px]"/>
           </div>
