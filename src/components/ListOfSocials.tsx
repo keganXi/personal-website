@@ -9,6 +9,10 @@ interface ListOfSocialsState {
     }[]
 }
 
+
+/* 
+* NOTE: displays social media icons and links to accounts.
+*/
 const ListOfSocials: React.FC<ListOfSocialsState> = (props) => {
     return(
         <div className="hidden sm:block">
