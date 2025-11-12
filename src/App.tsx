@@ -13,6 +13,17 @@ const App: React.FC = () => {
     "With over 5 years of industry experience, I have contributed to diverse software projects, collaborating across multidisciplinary teams. My technical skills include Python, JavaScript, TypeScript, SQL, CI/CD, and agile development",
     "This enable me to tackle complex problems that have a tangible impact on the products I work on, strengthening my ability to deliver meaningful results independently and efficiently.",
   ];
+  const navArr = [
+    {
+      title: "Home",
+      url: "",
+    },
+
+    {
+      title: "Insights",
+      url: "",
+    },
+  ];
   const socialsArr: Socials[] = [
     {
       title: "GitHub",
@@ -37,8 +48,17 @@ const App: React.FC = () => {
   ];
 
   return (
-    <div className="p-4 lg:px-[20%] lg:py-12">
-      <section>
+    <div className="p-4">
+      <nav className="w-full flex space-x-10 lg:px-[20%] fixed">
+        {navArr.map((value) => (
+          <div className="hover:border-b-4  hover:border-slate-200 cursor-pointer duration-100">
+            <a href={value.url} className="text-slate-400 text-sm">
+              {value.title}
+            </a>
+          </div>
+        ))}
+      </nav>
+      <section className="lg:px-[20%] lg:pt-20">
         <header className="pb-12">
           <h1 className="text-[23px] font-semibold">Kegan Overberg</h1>
           <h3 className="font-semibold text-[23px] text-slate-400">
@@ -62,7 +82,7 @@ const App: React.FC = () => {
             </button>
           </a>
           <a href="mailto:overbergsoftware@gmail.com">
-            <button className="rounded-full px-4 py-1.5 text-sm bg-slate-400 text-white">
+            <button className="rounded-full px-4 py-1.5 text-sm bg-slate-200 text-black">
               Get in Touch
             </button>
           </a>
